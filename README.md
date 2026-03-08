@@ -128,20 +128,27 @@ GEMCLI-MULTIAGENTS/
 3. **Run `gemini` in each terminal**
 4. **Start using slash commands**: `/task:architect [your request]`
 
-### This Project is Gemini CLI Specific
+### This Project is Most Recommended for Gemini CLI
 
-**✅ Works with:**
-- Gemini CLI (`@google/gemini-cli`)
+**🎯 Optimized & Recommended for:**
+- **Gemini CLI** (`@google/gemini-cli`) — Primary choice for this system
 - Google's free Gemini models (via `gemini login`)
 - Google account OAuth (no API key needed)
+- Free tier with generous quotas
 
-**❌ Does NOT work with:**
-- OpenAI CLI
-- Claude CLI
-- Anthropic SDK
-- Other LLM tools
+**🔄 Can Be Adapted For:**
+- Other LLM CLIs (OpenAI, Claude, Anthropic, etc.)
+- The multi-agent architecture is tool-agnostic
+- Skill files may need syntax adjustments for other CLI tools
+- Core system design (Architect → Logic → Style → Audit → Doc) works universally
 
-If you're using a different LLM, this multi-agent system architecture can be adapted, but the skill files and commands are specific to Gemini CLI's syntax and features.
+**Why Gemini CLI is Recommended:**
+- ✅ Free authentication (no API key management)
+- ✅ Built-in `@file` context injection
+- ✅ Native `write_file` tool for persistence
+- ✅ Direct `!git` command execution
+- ✅ Seamless `/ide connect` integration with VS Code
+- ✅ Low latency for fast agent coordination
 
 ---
 

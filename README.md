@@ -56,6 +56,95 @@ The Architect reads this and responds. It uses `write_file` to save its delegati
 
 ---
 
+## Import Into VS Code Workspace
+
+**⚠️ IMPORTANT:** This project requires the **Gemini CLI** (`@google/gemini-cli`). It is NOT compatible with other LLM CLIs (OpenAI, Claude, etc.). You must have Gemini CLI installed and authenticated before using this project.
+
+### Prerequisites
+
+Before importing this repo, ensure you have:
+1. **Gemini CLI installed:** `npm install -g @google/gemini-cli`
+2. **Gemini CLI authenticated:** `gemini login` (uses your free Google account)
+3. **VS Code installed:** https://code.visualstudio.com
+4. **Git installed:** https://git-scm.com
+
+### Clone the Repository
+
+Open a terminal and run:
+
+```bash
+git clone https://github.com/rackerism/GEMCLI-MULTIAGENTS.git
+cd GEMCLI-MULTIAGENTS
+```
+
+### Open in VS Code
+
+**Option 1: Command Line**
+```bash
+code .
+```
+
+**Option 2: VS Code Menu**
+1. Open VS Code
+2. Click **File** → **Open Folder**
+3. Navigate to the cloned `GEMCLI-MULTIAGENTS` folder
+4. Click **Select Folder**
+
+### Verify Setup
+
+1. Open the Integrated Terminal in VS Code (`Ctrl + `` backtick)
+2. Verify Gemini CLI is available:
+   ```bash
+   gemini --version
+   ```
+   Should print: `@google/gemini-cli 0.x.x` or similar
+3. Verify authentication:
+   ```bash
+   gemini "Hello, can you see me?"
+   ```
+   You should get a response from Gemini
+
+### What You've Imported
+
+```
+GEMCLI-MULTIAGENTS/
+├── .gemini/commands/task/       ← 5 Gemini CLI skill files
+│   ├── architect.toml           ← /task:architect command
+│   ├── logic.toml               ← /task:logic command
+│   ├── style.toml               ← /task:style command
+│   ├── audit.toml               ← /task:audit command
+│   └── doc.toml                 ← /task:doc command
+├── GEMINI.md                    ← Agent system constitution
+├── memory.md                    ← Shared blackboard (grows over time)
+├── README.md                    ← This file
+├── INSTALL.md                   ← Detailed setup guide
+└── .geminiignore                ← Files to ignore
+```
+
+### Next Steps
+
+1. **Open 5 terminals** in VS Code (see "VS Code Mission Control" section below)
+2. **Rename each terminal** to match agent roles (Architect, Logic-01, Style-01, Audit-01, Doc-01)
+3. **Run `gemini` in each terminal**
+4. **Start using slash commands**: `/task:architect [your request]`
+
+### This Project is Gemini CLI Specific
+
+**✅ Works with:**
+- Gemini CLI (`@google/gemini-cli`)
+- Google's free Gemini models (via `gemini login`)
+- Google account OAuth (no API key needed)
+
+**❌ Does NOT work with:**
+- OpenAI CLI
+- Claude CLI
+- Anthropic SDK
+- Other LLM tools
+
+If you're using a different LLM, this multi-agent system architecture can be adapted, but the skill files and commands are specific to Gemini CLI's syntax and features.
+
+---
+
 ## VS Code Mission Control
 
 Run all 5 agents in a single IDE window using VS Code's split terminal feature. This is the recommended setup for visual coordination.

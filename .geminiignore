@@ -1,0 +1,52 @@
+# Gemini CLI Ignore Patterns
+# Files the CLI should not index or include in context
+
+# Node/npm
+node_modules/
+package-lock.json
+npm-debug.log
+
+# Python (from old setup)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Logs
+*.log
+*.logs
+error.log
+
+# System files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+~*
+*.swp
+*.swo
+
+# IDE
+.vscode/settings.json
+.idea/workspace.xml
+
+# Old Python orchestrator (replaced)
+main.py
+context.md
+requirements.txt

@@ -171,64 +171,32 @@ GEMCLI-MULTIAGENTS/
 
 ---
 
-## Setup Commands
+## Quick Setup
 
-Instead of manually opening terminals and configuring everything, use one of these automated setup methods:
+**Automated Setup (Recommended):**
 
-### Option 1: Shell Script (Recommended for Quick Setup)
+**Windows:** [Download setup.bat from Releases](https://github.com/rackerism/GEMCLI-MULTIAGENTS/releases) → Run it
+```batch
+setup.bat
+```
 
-**Unix/Linux/macOS:**
+**Unix/Linux/macOS:** Run the shell script
 ```bash
 chmod +x setup.sh
 ./setup.sh
 ```
 
-**Windows:**
-```batch
-setup.bat
-```
+**VS Code Task:** Press `Ctrl+Shift+P` → Run "Initialize MAS - 5 Agents"
 
-What it does:
-- ✅ Verifies Gemini CLI is installed
+**Gemini CLI:** Type `/task:init` in any terminal for an interactive setup checklist
+
+**What setup does:**
+- ✅ Verifies Gemini CLI is installed & authenticated
 - ✅ Opens VS Code
 - ✅ Splits terminal into 5 panes
-- ✅ Names each pane (Architect, Logic-01, Style-01, Audit-01, Doc-01)
+- ✅ Names each agent (Architect, Logic-01, Style-01, Audit-01, Doc-01)
 - ✅ Starts `gemini` in each terminal
 - ✅ Ready for `/task:` commands
-
-### Option 2: VS Code Task (One-Click from IDE)
-
-1. Open the project in VS Code
-2. Press `Ctrl + Shift + P` (Command Palette)
-3. Type: `Tasks: Run Task`
-4. Select: **Initialize MAS - 5 Agents**
-5. Press Enter
-
-The task automatically:
-- Runs the setup script for your OS
-- Sets up all 5 terminals
-- Starts the MAS system
-
-### Option 3: Gemini CLI Skill (For CLI-Based Init)
-
-```bash
-/task:init
-```
-
-This Gemini CLI command:
-- ✅ Detects your workspace configuration
-- ✅ Provides setup checklist
-- ✅ Suggests next steps
-- ✅ Saves initialization status to memory.md
-
-### Which Method Should I Use?
-
-| Method | Best For | Speed |
-|--------|----------|-------|
-| **Shell Script** | Quick one-time setup | ⚡⚡⚡ Fastest |
-| **VS Code Task** | Frequent re-initialization | ⚡⚡ Fast |
-| **Gemini CLI Skill** | Interactive guidance | ⚡ Guided |
-| **Manual** | Full control & customization | 🐢 Manual |
 
 ---
 

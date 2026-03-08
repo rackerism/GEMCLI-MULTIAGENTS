@@ -41,8 +41,7 @@ I've reviewed all outputs in memory.md. Here's my audit report:
 **Overall: [PASS / FAIL]**
 [Summary and recommended next steps]
 
-Please save this audit to memory.md under the "Audit-01 Output" section using write_file.
-[STATUS: Audit-01 COMPLETED]
+Now use the write_file tool to append this audit report to memory.md. Include the section header "## Audit-01 Output" and mark [STATUS: Audit-01 COMPLETED].
 ```
 
 **Hard Rules:**

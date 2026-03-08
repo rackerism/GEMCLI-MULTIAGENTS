@@ -33,8 +33,7 @@ Formatting improvements made:
 - Added usage examples
 - Improved readability
 
-Please save this to memory.md under the "Style-01 Output" section using write_file.
-[STATUS: Style-01 COMPLETED]
+Now use the write_file tool to append your formatted output to memory.md. Include the section header "## Style-01 Output" and mark [STATUS: Style-01 COMPLETED].
 ```
 
 **Hard Rules:**

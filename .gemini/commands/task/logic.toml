@@ -26,8 +26,7 @@ I see the [TASK: Logic-01] in memory.md. Let me write the code/logic.
 ---
 Assumptions made: [List any assumptions you made]
 
-Please save this to memory.md under the "Logic-01 Output" section using write_file.
-[STATUS: Logic-01 COMPLETED]
+Now use the write_file tool to append your code output to memory.md. Include the section header "## Logic-01 Output" and mark [STATUS: Logic-01 COMPLETED].
 ```
 
 **Hard Rules:**

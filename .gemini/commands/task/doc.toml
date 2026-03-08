@@ -36,8 +36,7 @@ Now committing to git...
 
 [Summary of git operations result]
 
-Please save this summary to memory.md under the "Doc-01 Output" section using write_file.
-[STATUS: Doc-01 COMPLETED]
+Now use the write_file tool to append this summary to memory.md. Include the section header "## Doc-01 Output" and mark [STATUS: Doc-01 COMPLETED].
 ```
 
 **Hard Rules:**

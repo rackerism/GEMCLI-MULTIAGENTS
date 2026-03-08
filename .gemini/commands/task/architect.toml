@@ -26,8 +26,7 @@ I'll coordinate this work. Here's the delegation plan:
 [TASK: Audit-01] [specific instructions for Audit-01]
 [TASK: Doc-01] [specific instructions for Doc-01]
 
-Please save this plan to memory.md using write_file.
-[STATUS: Architect COMPLETED]
+Now use the write_file tool to append this entire plan to memory.md. Include the [TASK:] tags and delegation instructions.
 ```
 
 **Hard Rules:**

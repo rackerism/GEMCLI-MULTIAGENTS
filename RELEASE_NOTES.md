@@ -4,14 +4,25 @@
 
 A complete multi-agent coding system powered by Google's Gemini CLI. No Python, no API keys, completely free.
 
-## 📦 What's Included
+## 📥 Downloads
+
+**This Release Includes:**
+- **setup.sh** — Automated setup script (Unix/Linux/macOS)
+
+**Available in Repository:**
+- **setup.bat** — Windows setup script (clone repo to access)
+- Full source code & documentation
+
+---
+
+## 📦 What's Included in the System
 
 ### Core System Files
 - **GEMINI.md** — Agent constitution & system rules
 - **memory.md** — Shared blackboard for inter-agent communication
 - **README.md** — Complete documentation with table of contents
 
-### Gemini CLI Skills (Slash Commands)
+### Gemini CLI Skills (6 Slash Commands)
 - **/task:architect** — System designer; delegates work
 - **/task:logic** — Backend developer; writes code
 - **/task:style** — Frontend specialist; formats output
@@ -19,16 +30,14 @@ A complete multi-agent coding system powered by Google's Gemini CLI. No Python, 
 - **/task:doc** — DevOps manager; commits to git
 - **/task:init** — System initializer; setup checklist
 
-### Setup & Configuration
-- **setup.sh** — Automated setup for Unix/Linux/macOS
-- **setup.bat** — Automated setup for Windows
+### Configuration Files
 - **.vscode/tasks.json** — VS Code integration
 - **.geminiignore** — Ignore patterns
 - **INSTALL.md** — Detailed setup guide
 
 ## ⚡ Quick Start
 
-### 1. Prerequisites
+### Prerequisites
 ```bash
 # Install Gemini CLI
 npm install -g @google/gemini-cli
@@ -37,17 +46,11 @@ npm install -g @google/gemini-cli
 gemini login
 ```
 
-### 2. Clone Repository
+### Clone & Setup
+
 ```bash
 git clone https://github.com/rackerism/GEMCLI-MULTIAGENTS.git
 cd GEMCLI-MULTIAGENTS
-```
-
-### 3. Run Setup
-
-**Windows:**
-```batch
-setup.bat
 ```
 
 **Unix/Linux/macOS:**
@@ -56,14 +59,19 @@ chmod +x setup.sh
 ./setup.sh
 ```
 
-**What setup does:**
+**Windows:**
+```batch
+setup.bat
+```
+
+### What setup does
 - ✅ Verifies Gemini CLI is installed
 - ✅ Opens VS Code
 - ✅ Configures 5 agent terminals
 - ✅ Starts Gemini CLI in each terminal
 - ✅ Ready to use `/task:` commands
 
-### 4. Use Your First Command
+### Try Your First Command
 ```bash
 /task:architect Write a Python function to reverse a string
 ```

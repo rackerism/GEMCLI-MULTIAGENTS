@@ -1,43 +1,3 @@
-# MAS Blackboard / Memory
-
-_Shared state file for all agents to read and write._
-
----
-
-## Current Plan: Task Manager CLI (JavaScript)
-
-[TASK: Logic-01]
-Implement a Node.js CLI task manager in a single file `task_manager.js`. It must:
-- Store tasks in `tasks.json`.
-- Use `fs` for file operations (read/write).
-- Support commands: `add <description>`, `list`, `complete <id>`, `delete <id>`.
-- Use `process.argv` to parse command-line arguments.
-
-[TASK: Style-01]
-Review the `task_manager.js` file and:
-- Add a professional usage banner for the CLI.
-- Ensure consistent indentation and clean code style.
-- Add JSDoc-style comments for functions.
-- Add a `README.md` with installation and usage instructions.
-
-[TASK: Audit-01]
-Audit the `task_manager.js` implementation for:
-- Proper error handling (e.g., when `tasks.json` is missing or corrupted).
-- Edge cases (e.g., marking a non-existent task as complete).
-- Argument validation (e.g., ensuring a description is provided for `add`).
-- Security (e.g., basic input sanitization).
-
-[TASK: Doc-01]
-Initialize the repository if needed and perform the following:
-- Stage all new files (`task_manager.js`, `tasks.json`, `README.md`).
-- Commit the changes with the message: "Add complete task manager CLI prototype".
-
-## Logic-01 Output
-
-Task: Implement a Node.js CLI task manager in a single file `task_manager.js`.
-
-Solution:
-```javascript
 const fs = require('fs');
 const path = require('path');
 
@@ -101,12 +61,6 @@ if (command === 'add') {
         saveTasks(filteredTasks);
         console.log(`Task ${id} deleted.`);
     }
+} else {
+    // Unsupported command or no command provided
 }
-```
-
-Assumptions:
-- Only basic Node.js built-ins (`fs`, `path`) were required.
-- JSON format for persistence.
-- Simple ID generation logic.
-
-[STATUS: Logic-01 COMPLETED]

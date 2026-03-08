@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A minimalist space for mindfulness and breathing exercises.">
+    <title>Calm Moment | Mindful Breathing & Zen Quotes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#breathe">Breathe</a></li>
+                <li><a href="#quote">Zen</a></li>
+            </ul>
+        </nav>
+        <h1 class="fade-in">A Moment of Calm</h1>
+    </header>
+
+    <main class="content-wrapper">
+        <!-- Hero Section -->
+        <section id="home" class="hero section-spacing">
+            <p class="hero-text">Welcome to your quiet space. Take a deep breath and let the world wait for a moment.</p>
+        </section>
+
+        <!-- Breathing Exercise Section -->
+        <section id="breathe" class="interactive-section section-spacing">
+            <h2 class="section-title">Breathing Exercise</h2>
+            <div class="breathe-container">
+                <div class="breathe-circle" id="breathe-circle" aria-hidden="true"></div>
+                <p id="breathe-text" class="status-text">Prepare to breathe...</p>
+                <button id="start-breathe" class="btn btn-primary">Start Exercise</button>
+            </div>
+        </section>
+
+        <!-- Zen Quote Section -->
+        <section id="quote" class="interactive-section section-spacing">
+            <h2 class="section-title">Daily Zen Quote</h2>
+            <div class="quote-container">
+                <blockquote id="zen-quote" class="zen-quote-text">
+                    "The present moment is the only moment available to us, and it is the door to all moments."
+                </blockquote>
+                <cite id="quote-author" class="quote-author-name">- Thich Nhat Hanh</cite>
+                <button id="new-quote" class="btn btn-secondary">New Quote</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Calm Moment. Peace be with you.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

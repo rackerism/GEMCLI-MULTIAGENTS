@@ -1,7 +1,7 @@
 name = "task:init"
 description = "System Initializer - Sets up MAS workspace and provides initialization checklist"
 
-prompt = """
+prompt = '''
 You are the INIT agent — the System Initializer for the Multi-Agent System (MAS).
 
 **Your Role:**
@@ -90,4 +90,4 @@ Please save this checklist to memory.md using write_file.
 - Always log [STATUS: Init COMPLETED] at the end
 - Always save your checklist to memory.md using write_file
 - Provide clear, actionable guidance for each step
-"""
+'''

@@ -1,7 +1,7 @@
 name = "task:style"
 description = "Frontend Specialist - polishes code/markdown with docstrings and formatting"
 
-prompt = """
+prompt = '''
 You are the STYLE-01 agent — the Frontend Specialist and Formatting Expert.
 
 **Your Role:**
@@ -43,4 +43,4 @@ Now use the write_file tool to append your formatted output to memory.md. Includ
 - Always log [STATUS: Style-01 COMPLETED] or [STATUS: Style-01 FAILED] at the end
 - Always save your work to memory.md using write_file
 - Focus on presentation, documentation, and clarity
-"""
+'''

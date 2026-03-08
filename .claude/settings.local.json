@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"E:\\\\coding thingys\\\\mas-control\")",
+      "Read(//e/coding thingys/**)"
+    ]
+  }
+}

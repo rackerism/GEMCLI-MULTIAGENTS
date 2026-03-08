@@ -1,0 +1,211 @@
+/* 
+ * Calm Moment Stylesheet
+ * Soothing color palette, elegant typography, and responsive layout.
+ */
+
+:root {
+    --bg-color: #f7fafc;
+    --text-color: #2d3748;
+    --text-muted: #4a5568;
+    --accent-blue: #ebf8ff;
+    --accent-blue-dark: #63b3ed;
+    --accent-green: #f0fff4;
+    --accent-green-dark: #68d391;
+    --border-color: #e2e8f0;
+    --max-width: 800px;
+    --font-main: 'Inter', sans-serif;
+    --font-serif: 'Playfair Display', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Layout Containers */
+.content-wrapper {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.section-spacing {
+    padding: 6rem 0;
+}
+
+/* Typography */
+h1 {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+h2.section-title {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+/* Header & Navigation */
+.site-header {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(to bottom, #ffffff, var(--bg-color));
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: var(--accent-blue-dark);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+}
+
+.hero-text {
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+/* Interactive Sections */
+.interactive-section {
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Breathing Exercise */
+.breathe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.breathe-circle {
+    width: 200px;
+    height: 200px;
+    background-color: var(--accent-blue);
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 4s ease-in-out, background-color 4s ease-in-out;
+}
+
+.status-text {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    font-weight: 300;
+}
+
+/* Zen Quotes */
+.quote-container {
+    text-align: center;
+    max-width: 600px;
+}
+
+.zen-quote-text {
+    font-family: var(--font-serif);
+    font-size: 1.75rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+    transition: opacity 0.5s ease;
+}
+
+.quote-author-name {
+    display: block;
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+    transition: opacity 0.5s ease;
+}
+
+/* Buttons */
+.btn {
+    padding: 0.8rem 2.5rem;
+    border: 1px solid var(--border-color);
+    background: white;
+    color: var(--text-muted);
+    font-family: var(--font-main);
+    font-size: 0.9rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.05rem;
+}
+
+.btn:hover {
+    border-color: var(--accent-blue-dark);
+    color: var(--accent-blue-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.btn-primary.active {
+    background-color: var(--text-color);
+    color: white;
+    border-color: var(--text-color);
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 4rem 2rem;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-muted);
+    font-size: 0.8rem;
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    h1 { font-size: 2.2rem; }
+    .hero-text { font-size: 1.2rem; }
+    .breathe-circle { width: 150px; height: 150px; }
+}

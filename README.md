@@ -2,6 +2,25 @@
 
 A 5-agent coding assistant using the **Gemini CLI** (completely free with Google account OAuth).
 
+## Table of Contents
+
+- [Quick Start](#quick-start)
+- [Import Into VS Code Workspace](#import-into-vs-code-workspace)
+- [Setup Commands](#setup-commands)
+- [VS Code Mission Control](#vs-code-mission-control)
+- [The 5-Step Sync Loop](#the-5-step-sync-loop)
+- [Slash Commands (Skill Files)](#slash-commands-skill-files)
+- [How to Use the CLI](#how-to-use-the-cli)
+- [Agent Workflow Example](#agent-workflow-example)
+- [Key Workflow Rules](#key-workflow-rules)
+- [File Structure](#file-structure)
+- [Advanced Features](#advanced-features)
+- [Troubleshooting](#troubleshooting)
+- [Tips & Best Practices](#tips--best-practices)
+- [Next Steps](#next-steps)
+
+---
+
 ## Overview
 
 No Python. No API keys. No payment. Just open 5 terminal windows and let your agents collaborate via a shared blackboard (`memory.md`).
@@ -149,6 +168,67 @@ GEMCLI-MULTIAGENTS/
 - ✅ Direct `!git` command execution
 - ✅ Seamless `/ide connect` integration with VS Code
 - ✅ Low latency for fast agent coordination
+
+---
+
+## Setup Commands
+
+Instead of manually opening terminals and configuring everything, use one of these automated setup methods:
+
+### Option 1: Shell Script (Recommended for Quick Setup)
+
+**Unix/Linux/macOS:**
+```bash
+chmod +x setup.sh
+./setup.sh
+```
+
+**Windows:**
+```batch
+setup.bat
+```
+
+What it does:
+- ✅ Verifies Gemini CLI is installed
+- ✅ Opens VS Code
+- ✅ Splits terminal into 5 panes
+- ✅ Names each pane (Architect, Logic-01, Style-01, Audit-01, Doc-01)
+- ✅ Starts `gemini` in each terminal
+- ✅ Ready for `/task:` commands
+
+### Option 2: VS Code Task (One-Click from IDE)
+
+1. Open the project in VS Code
+2. Press `Ctrl + Shift + P` (Command Palette)
+3. Type: `Tasks: Run Task`
+4. Select: **Initialize MAS - 5 Agents**
+5. Press Enter
+
+The task automatically:
+- Runs the setup script for your OS
+- Sets up all 5 terminals
+- Starts the MAS system
+
+### Option 3: Gemini CLI Skill (For CLI-Based Init)
+
+```bash
+/task:init
+```
+
+This Gemini CLI command:
+- ✅ Detects your workspace configuration
+- ✅ Provides setup checklist
+- ✅ Suggests next steps
+- ✅ Saves initialization status to memory.md
+
+### Which Method Should I Use?
+
+| Method | Best For | Speed |
+|--------|----------|-------|
+| **Shell Script** | Quick one-time setup | ⚡⚡⚡ Fastest |
+| **VS Code Task** | Frequent re-initialization | ⚡⚡ Fast |
+| **Gemini CLI Skill** | Interactive guidance | ⚡ Guided |
+| **Manual** | Full control & customization | 🐢 Manual |
 
 ---
 
